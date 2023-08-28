@@ -2,16 +2,14 @@ import './global.css'
 import style from './App.module.css'
 import { Header } from './components/Header'
 import { Input } from './components/Input'
-import { Task } from './components/Task'
+import {List} from './components/TaskList'
 
 export function App() {
-  return (
-    <div>
+  return (  
+    <div className={style.wrapper}>
       <Header />
-      <div className={style.wrapper}>
-        <Input />
-        <Task />
-      </div>
+      <Input />
+      <List />
     </div>
   )
 }

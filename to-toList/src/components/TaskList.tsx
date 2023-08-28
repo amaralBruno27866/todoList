@@ -1,7 +1,7 @@
-import style from '../styles/Task.module.css'
+import style from '../styles/TaskList.module.css'
 import clipboard from '../assets/clipboard.png'
 
-export function Task() {
+export function List() {
     return (
         <div className={style.task}>
             <div className={style.taskHeader}>

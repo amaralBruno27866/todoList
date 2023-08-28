@@ -1,7 +1,7 @@
 .wrapper{
-  max-width: 90rem;
-  padding: 0 1rem;
-  grid-template-columns: 256px 1fr;
+  max-width: 100%;
+  display: block;
+  grid-template-columns: 16rem 1fr;
   gap: 2rem;
   align-items: center;
   justify-content: center;
