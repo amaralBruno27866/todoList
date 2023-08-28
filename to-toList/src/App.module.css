@@ -3,12 +3,13 @@
   padding: 0 1rem;
   grid-template-columns: 256px 1fr;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 @media(max-width: 768px){
   html{
-    font-size: 87,5%;
+    font-size: 87.5%;
   }
 
   .wrapper{

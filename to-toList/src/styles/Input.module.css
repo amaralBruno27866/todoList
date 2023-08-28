@@ -1,20 +1,17 @@
-.body{
+.inputContainer {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-.content{
-    margin: 0;
-    padding: 0;
+.inputContent {
     margin-top: calc(0px - 2rem);
-    max-width: 46rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.content input{
+.inputContent input {
     margin: 0px 8px;
     padding: 1rem;
     border: 1px solid var(--gray-700);
@@ -26,7 +23,7 @@
     font-size: 1rem;
 }
 
-.content button{
+.inputContent button {
     height: 52px;
     width: 90px;
     background: var(--blue-light);
@@ -39,6 +36,6 @@
     justify-content: center;
 }
 
-.content button img{
+.inputContent button img {
     margin-left: 8px;
 }

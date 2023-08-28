@@ -1,0 +1,81 @@
+.task {
+    margin: 2rem;
+    margin-top: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+}
+
+.taskHeader {
+    width: 46rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskHeader .createdTasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blue-light);
+}
+.taskHeader .concludedTasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--purple-light);
+}
+
+.taskHeader button {
+    margin-left: 8px;
+    background: var(--gray-400);
+    border: none;
+    color: var(--gray-200);
+    border-radius: 999px;
+    width: 25px;
+    height: 19px;
+}
+
+.taskContent {
+    width: 46rem;
+    margin-top: 24px;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.taskContent .empty {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.taskContent .empty img {
+    margin: 0;
+    padding: 2rem;
+}
+
+.taskContent .empty span {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.line1,
+.line2 {
+    color: var(--gray-300);
+    font-size: 1rem;
+}
+
+.line1 {
+    font-weight: bold;
+}
