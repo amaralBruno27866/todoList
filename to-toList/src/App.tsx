@@ -1,12 +1,14 @@
-import './App.module.css'
+import { Header } from './components/Header'
+import style from './App.module.css'
+import './global.css'
 
-function App() {
-
+export function App() {
   return (
     <div>
-      <h1>Test</h1>
+      <Header />
+      <div className={style.wrapper}>
+        <h1>Test</h1>
+      </div>
     </div>
   )
 }
-
-export default App
