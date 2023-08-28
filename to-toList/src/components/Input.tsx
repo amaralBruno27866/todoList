@@ -1,5 +1,5 @@
 import style from '../styles/Input.module.css'
-import plus from '../assets/plus.png'
+import {PlusCircle} from 'phosphor-react'
 
 export function Input() {
     return (
@@ -7,7 +7,8 @@ export function Input() {
             <div className={style.inputContent}>
                 <input type="text" placeholder='Add a new task' />
                 <button>
-                    Create <img src={plus} alt='Plus Button' />
+                    Create
+                    <span className={style.plusCircle}><PlusCircle size={20}/></span>
                 </button>
             </div>
         </div>

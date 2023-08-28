@@ -24,9 +24,10 @@
 }
 
 .inputContent button {
+    border: none;
     height: 52px;
     width: 90px;
-    background: var(--blue-light);
+    background: var(--blue-dark);
     color: var(--gray-100);
     border-radius: 8px;
     font-size: 0.875rem;
@@ -34,6 +35,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: color 0.2s, backround-color 0.2s;
+}
+
+.inputContent button .plusCircle{
+    margin-left: 8px;
+}
+
+.inputContent button .buttonContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContent button:hover{
+    background: var(--blue-light);
+    color: black;
 }
 
 .inputContent button img {
