@@ -1,8 +1,9 @@
 .header{
+    max-height: 200px;
     background: var(--gray-700);
     display: flex;
     justify-content: center;
-    padding: 1.25rem 0;
+    padding: 4.5rem 0;
 }
 
 .header img{
