@@ -1,5 +1,6 @@
 import style from '../styles/TaskList.module.css'
 import clipboard from '../assets/clipboard.png'
+import { Tasks } from '../components/Tasks'
 
 export function List() {
     return (
@@ -30,6 +31,7 @@ export function List() {
                         </p>
                     </span>
                 </div>
+                <Tasks />
             </div>
         </div>
     )
