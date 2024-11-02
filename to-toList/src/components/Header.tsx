@@ -6,7 +6,7 @@ import { ChangeEvent, FormEvent, useState } from 'react';
 interface Props{
     whenAddNewTask: (taskContent: string) => void;
 }
-// add some comment just for test my git
+
 export function Header({whenAddNewTask}:Props) {
 
     const [content, setContent] = useState("");
