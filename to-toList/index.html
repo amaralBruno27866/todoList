@@ -1,16 +1,28 @@
+<!-- Objective:
+Set up the HTML structure for the To-Do List application, including linking styles, fonts, and the main JavaScript entry point. -->
+
+<!-- Why:
+Provides the base structure for the application, ensuring proper rendering and linking of resources like fonts, styles, and scripts. -->
+
+<!-- Result:
+Creates a functional HTML document that serves as the entry point for the React application. -->
+
+<!-- How to implement:
+Place this file in the root of the project. The development server will use it as the main HTML file. -->
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/svg+xml" href="/public/images/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
-    <title>To-Do List by Bruno</title>
+    <meta charset="UTF-8" /> <!-- Specifies the character encoding for the document -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Preconnects to the Google Fonts server -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Preconnects to the Google Fonts static server -->
+    <link rel="icon" type="image/svg+xml" href="/public/images/logo.svg" /> <!-- Sets the favicon for the application -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures proper scaling on mobile devices -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" /> <!-- Links Google Fonts -->
+    <title>To-Do List by Bruno</title> <!-- Sets the title of the application -->
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root"></div> <!-- Root element where the React application will be mounted -->
+    <script type="module" src="/src/main.tsx"></script> <!-- Links the main TypeScript entry point -->
   </body>
 </html>

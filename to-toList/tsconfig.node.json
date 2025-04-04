@@ -1,10 +1,22 @@
+// Objective:
+// Configure TypeScript compiler options specifically for Node.js and Vite configuration files.
+
+// Why:
+// Ensures proper compilation of TypeScript files related to Node.js and Vite, enabling features like module resolution and default imports.
+
+// Result:
+// Provides a TypeScript setup tailored for Node.js and Vite, ensuring compatibility and better developer experience when working with these tools.
+
+// How to implement:
+// Place this file in the root of the project and reference it in the main `tsconfig.json` file.
+
 {
   "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "composite": true, // Enables project references for incremental builds
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "module": "ESNext", // Specifies the module system
+    "moduleResolution": "bundler", // Resolves modules in a bundler-compatible way
+    "allowSyntheticDefaultImports": true // Allows default imports for modules without default exports
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"] // Includes the Vite configuration file for compilation
 }

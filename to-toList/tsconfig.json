@@ -1,25 +1,37 @@
+// Objective:
+// Configure TypeScript compiler options for the project.
+
+// Why:
+// Ensures proper compilation of TypeScript code, supports modern JavaScript features, and enforces strict type checking for better code quality.
+
+// Result:
+// Provides a consistent TypeScript setup tailored for React and modern JavaScript, improving developer experience and code maintainability.
+
+// How to implement:
+// Place this file in the root of the project. TypeScript will automatically use these settings during compilation.
+
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2020", // Specifies the target JavaScript version
+    "useDefineForClassFields": true, // Enables `define` semantics for class fields
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Includes libraries for ES2020 and DOM features
+    "module": "ESNext", // Specifies the module system
+    "skipLibCheck": true, // Skips type checking of declaration files
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "moduleResolution": "bundler", // Resolves modules in a bundler-compatible way
+    "allowImportingTsExtensions": true, // Allows importing TypeScript files with extensions
+    "resolveJsonModule": true, // Enables importing JSON files as modules
+    "isolatedModules": true, // Ensures each file is treated as a separate module
+    "noEmit": true, // Prevents emitting compiled JavaScript files
+    "jsx": "react-jsx", // Specifies JSX transformation for React
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "strict": true, // Enables all strict type-checking options
+    "noUnusedLocals": true, // Reports unused local variables
+    "noUnusedParameters": true, // Reports unused function parameters
+    "noFallthroughCasesInSwitch": true // Prevents fallthrough cases in switch statements
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"], // Includes the `src` directory for compilation
+  "references": [{ "path": "./tsconfig.node.json" }] // References additional TypeScript configuration for Node.js
 }
