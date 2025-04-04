@@ -1,18 +1,22 @@
-.wrapper{
-  max-width: 100%;
-  display: block;
-  grid-template-columns: 16rem 1fr;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
+/* .wrapper: Styles for the main container of the application */
+.wrapper {
+  max-width: 100%; /* Full width */
+  display: block; /* Block-level element */
+  grid-template-columns: 16rem 1fr; /* Grid layout with two columns */
+  gap: 2rem; /* Space between grid items */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
-@media(max-width: 768px){
-  html{
-    font-size: 87.5%;
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* html: Adjusts the base font size for smaller screens */
+  html {
+      font-size: 87.5%; /* Reduces font size to 87.5% of the default */
   }
 
-  .wrapper{
-    grid-template-columns: 1fr;
+  /* .wrapper: Adjusts the grid layout for smaller screens */
+  .wrapper {
+      grid-template-columns: 1fr; /* Single-column layout */
   }
 }

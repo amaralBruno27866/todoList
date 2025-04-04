@@ -1,48 +1,53 @@
+/* .header: Styles for the header section of the application */
 .header {
-    background: var(--gray-700);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 12.5rem;
-    position: relative;
-  }
-  
-  .newTaskForm {
-    position: absolute;
-    height: 3.375rem;
-    bottom: calc(-3.375rem / 2);
-    width: 100%;
-    max-width: 46rem;
-    display: flex;
-    gap: 0.5rem;
-    padding: 0 1rem;
-  }
-  
-  .newTaskForm input {
-    height: 100%;
-    flex: 1;
-    color: var(--gray-100);
-    background: var(--gray-500);
-    border: 1px solid var(--gray-700);
-    border-radius: 0.5rem;
-    padding: 0 1rem;
-    font-size: 1rem;
-  }
-  
-  .newTaskForm input::placeholder {
-    color: var(--gray-300);
-  }
-  
-  .newTaskForm button {
-    height: 100%;
-    padding: 0 1rem;
-    background: var(--blue-dark);
-    color: var(--gray-100);
-    border: none;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.375rem;
-    font-weight: 700;
-    font-size: 0.875rem;
-  }
+  background: var(--gray-700); /* Background color */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  height: 12.5rem; /* Height of the header */
+  position: relative; /* Relative positioning for child elements */
+}
+
+/* .newTaskForm: Styles for the form to add a new task */
+.newTaskForm {
+  position: absolute; /* Positioned relative to the header */
+  height: 3.375rem; /* Height of the form */
+  bottom: calc(-3.375rem / 2); /* Positioned below the header */
+  width: 100%; /* Full width */
+  max-width: 46rem; /* Maximum width */
+  display: flex; /* Flexbox layout */
+  gap: 0.5rem; /* Space between form elements */
+  padding: 0 1rem; /* Horizontal padding */
+}
+
+/* .newTaskForm input: Styles for the input field */
+.newTaskForm input {
+  height: 100%; /* Full height of the form */
+  flex: 1; /* Takes up remaining space */
+  color: var(--gray-100); /* Text color */
+  background: var(--gray-500); /* Background color */
+  border: 1px solid var(--gray-700); /* Border color and width */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0 1rem; /* Horizontal padding */
+  font-size: 1rem; /* Font size */
+}
+
+/* .newTaskForm input::placeholder: Styles for the placeholder text */
+.newTaskForm input::placeholder {
+  color: var(--gray-300); /* Placeholder text color */
+}
+
+/* .newTaskForm button: Styles for the submit button */
+.newTaskForm button {
+  height: 100%; /* Full height of the form */
+  padding: 0 1rem; /* Horizontal padding */
+  background: var(--blue-dark); /* Background color */
+  color: var(--gray-100); /* Text color */
+  border: none; /* No border */
+  border-radius: 0.5rem; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  gap: 0.375rem; /* Space between button content */
+  font-weight: 700; /* Bold text */
+  font-size: 0.875rem; /* Font size */
+}

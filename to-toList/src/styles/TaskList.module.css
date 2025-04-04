@@ -1,60 +1,69 @@
-.task{
-    width: 100%;
-    max-width: 46rem;
-    margin: 0 auto;
-    margin-top: 5.625rem;
-    padding: 0 1rem;
+/* .task: Styles for the task list container */
+.task {
+    width: 100%; /* Full width */
+    max-width: 46rem; /* Maximum width */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 5.625rem; /* Top margin */
+    padding: 0 1rem; /* Horizontal padding */
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
+/* .header: Styles for the header section of the task list */
+.header {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 1.5rem; /* Bottom margin */
 }
 
-.header div{
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
+/* .header div: Styles for the header's inner containers */
+.header div {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    gap: 0.8rem; /* Space between elements */
 }
 
-.header p{
-    color: var(--blue-light);
-    font-size: 0.875rem;
-    font-weight: 700;
+/* .header p: Styles for the header text */
+.header p {
+    color: var(--blue-light); /* Text color */
+    font-size: 0.875rem; /* Font size */
+    font-weight: 700; /* Bold text */
 }
 
-.header p.taskConcluded{
-    color: var(--purple-light);
+/* .header p.taskConcluded: Styles for the "Concluded" text */
+.header p.taskConcluded {
+    color: var(--purple-light); /* Text color */
 }
 
-.header span{
-    background: var(--gray-400);
-    color: var(--gray-200);
-    padding: 3px 9px;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    font-weight: 700;
+/* .header span: Styles for the task count badges */
+.header span {
+    background: var(--gray-400); /* Background color */
+    color: var(--gray-200); /* Text color */
+    padding: 3px 9px; /* Padding */
+    border-radius: 999px; /* Fully rounded corners */
+    font-size: 0.75rem; /* Font size */
+    font-weight: 700; /* Bold text */
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+/* .list: Styles for the task list */
+.list {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 0.75rem; /* Space between tasks */
 }
 
+/* .empty: Styles for the empty state container */
 .empty {
-    margin-top: 4rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: var(--gray-300);
-    text-align: center;
-  }
-  
+    margin-top: 4rem; /* Top margin */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Space between elements */
+    color: var(--gray-300); /* Text color */
+    text-align: center; /* Center text */
+}
+
+/* .empty p: Styles for the empty state message */
 .empty p {
-    font-weight: 700;
+    font-weight: 700; /* Bold text */
 }

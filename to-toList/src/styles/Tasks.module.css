@@ -1,59 +1,68 @@
-.task{
-    width: 100%;
-    background: var(--gray-500);
-    border: 1px solid var(--gray-400);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
+/* .task: Styles for the task container */
+.task {
+    width: 100%; /* Full width */
+    background: var(--gray-500); /* Background color */
+    border: 1px solid var(--gray-400); /* Border color and width */
+    padding: 1rem; /* Padding around the content */
+    border-radius: 0.5rem; /* Rounded corners */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    gap: 0.75rem; /* Space between elements */
 }
 
-.task p{
-    font-size: 0.875rem;
-    line-height: 1.18rem;
-    color: var(--gray-100);
-    margin-right: auto;
+/* .task p: Styles for the task text */
+.task p {
+    font-size: 0.875rem; /* Font size */
+    line-height: 1.18rem; /* Line height */
+    color: var(--gray-100); /* Text color */
+    margin-right: auto; /* Pushes the text to the left */
 }
 
+/* p.textCompleted: Styles for completed task text */
 p.textCompleted {
-    color: var(--gray-300);
-    text-decoration: line-through;
+    color: var(--gray-300); /* Text color for completed tasks */
+    text-decoration: line-through; /* Strikethrough effect */
 }
 
-.checkButton{
-    min-width: 1.125rem;
-    height: 1.125rem;
-    background: none;
-    border: none;
+/* .checkButton: Styles for the task completion button */
+.checkButton {
+    min-width: 1.125rem; /* Minimum width */
+    height: 1.125rem; /* Height */
+    background: none; /* No background */
+    border: none; /* No border */
 }
 
-.checkButton div{
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--blue-light);
-    border-radius: 50%;
+/* .checkButton div: Styles for the uncompleted task indicator */
+.checkButton div {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 2px solid var(--blue-light); /* Border color and width */
+    border-radius: 50%; /* Fully rounded corners */
 }
 
-.deleteButton{
-    background: none;
-    border: none;
-    color: var(--gray-300);
-    transition: 0.2s;
+/* .deleteButton: Styles for the delete button */
+.deleteButton {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: var(--gray-300); /* Text color */
+    transition: 0.2s; /* Smooth transition for hover effect */
 }
 
-.deleteButton:hover{
-    color: var(--red-danger);
+/* .deleteButton:hover: Styles for the delete button on hover */
+.deleteButton:hover {
+    color: var(--red-danger); /* Changes color to red on hover */
 }
 
-.checkButton svg{
-    width: 100%;
-    height: 100%;
-    color: var(--purple-light);   
+/* .checkButton svg: Styles for the check icon */
+.checkButton svg {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    color: var(--purple-light); /* Icon color */
 }
 
-p.taskCompleted{
-    color: var(--gray-300);
-    text-decoration: line-through;
+/* p.taskCompleted: Duplicate style for completed task text */
+p.taskCompleted {
+    color: var(--gray-300); /* Text color for completed tasks */
+    text-decoration: line-through; /* Strikethrough effect */
 }
